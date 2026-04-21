@@ -4,7 +4,8 @@ defineProps(['review'])
 
 <template>
   <div class="card">
-    <router-link :to="`/review/${review.id}`">
+    <!-- 🔥 THIS is the fix -->
+    <router-link :to="`/review/${review.documentId}`">
       <h2>{{ review.Title }}</h2>
     </router-link>
 
@@ -14,9 +15,10 @@ defineProps(['review'])
 
 <style>
 .card {
-  border: 1px solid #ddd;
+  border: 1px solid var(--border);
   padding: 1rem;
   margin-bottom: 1rem;
-  border-radius: 8px;
+  border-radius: 12px;
+  background: var(--panel);
 }
 </style>
