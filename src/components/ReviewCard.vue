@@ -4,7 +4,6 @@ defineProps(['review'])
 
 <template>
   <div class="card">
-    <!-- 🔥 THIS is the fix -->
     <router-link :to="`/review/${review.documentId}`">
       <h2>{{ review.Title }}</h2>
     </router-link>

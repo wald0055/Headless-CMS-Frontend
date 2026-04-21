@@ -1,5 +1,15 @@
-# Vue 3 + Vite
+# Review Site Project
+This a game review website that displays user-generated reviews of a bunch of different video games. Users can browse a list of game reviews, view full details for each review, and search through available entries.
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+# Headless CMS
+The project uses Strapi as a headless CMS to manage and store review data.
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+# Frontend
+The frontend is built using Vue.js. It fetches data from the Strapi API and displays reviews in a responsive and user-friendly interface.
+
+# Features of the website
+- List of game reviews
+- Full review detail pages
+- Search functionality
+- Responsive design
+- API-driven content using Strapi

@@ -20,6 +20,10 @@ const filteredReviews = computed(() => {
 
 <template>
   <div class="container">
+    <h1>Welcome to the Algonquin Game Review Hub</h1>
+
+    <h3>Check out some of our reviews on your favourite games below!</h3>
+
     <SearchBar v-model="search" />
 
     <ReviewCard
@@ -34,5 +38,13 @@ const filteredReviews = computed(() => {
 .container {
   max-width: 800px;
   margin: auto;
+}
+h1 {
+  color:#3b82f6;
+  text-align: center;
+  font-size: 4rem;
+}
+h3 {
+  text-align: center;
 }
 </style>

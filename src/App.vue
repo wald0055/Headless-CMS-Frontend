@@ -1,6 +1,6 @@
 <template>
   <nav class="nav">
-    <h1>Game Reviews</h1>
+    <h1>Algonquin Game Review Hub</h1>
     <router-link to="/">Home</router-link>
   </nav>
 
@@ -8,7 +8,6 @@
 </template>
 
 <style>
-/* NAV STYLES (now theme-friendly) */
 .nav {
   display: flex;
   justify-content: space-between;
