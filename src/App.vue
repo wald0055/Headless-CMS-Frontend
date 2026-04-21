@@ -1,7 +1,36 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <HelloWorld />
+  <nav class="nav">
+    <h1>Game Reviews</h1>
+    <router-link to="/">Home</router-link>
+  </nav>
+
+  <router-view />
 </template>
+
+<style>
+/* NAV STYLES (now theme-friendly) */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+
+  background: rgba(17, 24, 39, 0.8);
+  backdrop-filter: blur(10px);
+
+  border-bottom: 1px solid var(--border);
+}
+
+.nav h1 {
+  color: var(--text-bright);
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--pink);
+}
+</style>
